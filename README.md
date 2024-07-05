@@ -8,8 +8,9 @@ El objetivo de este plan de pruebas es asegurar la calidad y el correcto funcion
 
 # 3. Herramientas y Tecnologías
 - Herramientas de Automatización de Pruebas: Selenium, JUnit/TestNG, PyTest.
-- Herramientas de Gestión de Configuraciones: Git, Docker.
-- Herramientas de CI/CD: Jenkins, GitHub Actions.
+- Despliegues en Cloud: Azure, Azure DevOps, Jenkins, Docker, Kubernetes.
+- Herramientas de Gestión de Configuraciones: Ansible, Terraform, Puppet.
+- Pruebas de Rendimiento: JMeter.
 - Entorno de Desarrollo: Python, TensorFlow/PyTorch para IA.
 - Gestión de Proyectos: Jira, Confluence.
 
@@ -90,10 +91,33 @@ El objetivo de este plan de pruebas es asegurar la calidad y el correcto funcion
 - Desarrolladores: Asistencia en la configuración del entorno y corrección de errores.
 - Usuarios Finales: Pruebas de usabilidad y retroalimentación.
 
-# 6. Reporte y Seguimiento de Defectos
+# 6. Despliegues en Cloud y Automatización
+## 6.1. Despliegues en Cloud
+**Azure DevOps:**
+- Descripción: Utilizar Azure DevOps para gestionar la integración y entrega continua (CI/CD) de las pruebas.
+- Acciones: Configurar pipelines de CI/CD en Azure DevOps para automatizar la ejecución de pruebas.
+- Resultados Esperados: Despliegue automatizado y ejecución de pruebas en cada commit.
+
+**Jenkins:**
+- Descripción: Configurar Jenkins para la automatización de la integración continua.
+- Acciones: Crear jobs de Jenkins para ejecutar pruebas automatizadas y desplegar en entornos de prueba.
+- Resultados Esperados: Ejecución de pruebas y despliegues automatizados sin intervención manual.
+  
+**Docker y Kubernetes:**
+- Descripción: Utilizar Docker para la contenedorización de aplicaciones y Kubernetes para la orquestación.
+- Acciones: Crear contenedores Docker para las aplicaciones y desplegar en un clúster de Kubernetes.
+- Resultados Esperados: Despliegue escalable y gestión eficiente de los entornos de prueba.
+
+## 6.2. Gestión de Configuraciones
+**Ansible, Terraform, Puppet:**
+- Descripción: Utilizar herramientas de gestión de configuraciones para automatizar la configuración de entornos.
+- Acciones: Escribir scripts de Ansible y Terraform para la provisión de infraestructura, y usar Puppet para la gestión de configuraciones.
+- Resultados Esperados: Configuración reproducible y automatizada de entornos de prueba.
+  
+# 7. Reporte y Seguimiento de Defectos
 Utilización de Jira para reportar, seguir y gestionar defectos.
 Revisión diaria de defectos y planificación de correcciones.
 Reportes semanales al equipo de desarrollo y stakeholders.
 
-# 7. Conclusiones
-Este plan de pruebas está diseñado para garantizar una cobertura exhaustiva y efectiva de las funcionalidades de corrección de eventos de inicio/fin en la EPG de la plataforma de video, utilizando un enfoque sistemático y herramientas de pruebas automatizadas.
+# 8. Conclusiones
+Este plan de pruebas está diseñado para garantizar una cobertura exhaustiva y efectiva de las funcionalidades de corrección de eventos de inicio/fin en la EPG de la plataforma de video, utilizando un enfoque sistemático y herramientas de pruebas automatizadas y despliegues en cloud.
